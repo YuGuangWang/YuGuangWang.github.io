@@ -1,0 +1,126 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<title>Discrete needlet approximation on the sphere</title>
+<!-- <meta http-equiv="Content-Type" content="text/html; charset=us-ascii"> -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Author" content="Yuguang Wang">
+<meta name="Description" content="This is my homepage">
+<meta name="pagerank" content="5">
+<link rel="SHORTCUT icon" href="favicon.ico">
+<link href="div.css" rel="stylesheet" type="text/css" media="screen" >
+</head>
+
+<body bgcolor="#F2F2F2">
+
+<div>
+<h2>Discrete needlet approximation on the sphere (DisN)</h2>
+</div>
+
+<!-- Overview -->
+
+<div style="background-color:#FFFFFF">
+<h3><a name="research">Overview</a></h3>
+        <p style="line-height:1.5em">
+		Spherical needlets are highly localized radial polynomials on the sphere \(\mathbb{S}^{d}\subset \mathbb{R}^{d+1}\), \(d\ge 2\),
+		with centers at the nodes of a suitable cubature rule. The original semidiscrete spherical needlet approximation of Narcowich, Petrushev and Ward 
+		is not computable, in that the needlet coefficients depend on inner product integrals. In this work we approximate these integrals 
+		by a second quadrature rule with an appropriate degree of precision, to construct a fully discrete needlet approximation. 
+		We prove that the resulting approximation is equivalent to filtered hyperinterpolation, 
+		that is to a filtered Fourier-Laplace series partial sum with inner products replaced by appropriate cubature sums. 
+		It follows that the \(\mathbb{L}_{p}\)-error of discrete needlet approximation of order \(J\) for \(1 \le p \le \infty\) and \(s > d/p\) has 
+		for a function \(f\) in the Sobolev space \(\mathbb{W}_{p}^{s}(\mathbb{S}^{d})\) the optimal rate of convergence in the sense of optimal recovery, 
+		namely \(\mathcal{O}(2^{-J s})\). Moreover, this is achieved with a filter function that is of smoothness class \(C^{\lfloor\frac{d+3}{2}\rfloor}\),
+		in contrast to the usually assumed \(C^{\infty}\). A numerical experiment for a class of functions in known Sobolev smoothness classes gives 
+		\(\mathbb{L}_2\) errors for the fully discrete needlet approximation that are almost identical to those for the original 
+		semidiscrete needlet approximation. Another experiment uses needlets over the whole sphere for the lower levels together with 
+		high-level needlets with centers restricted to a local region. The resulting errors are reduced in the local region away from the boundary, 
+		indicating that local refinement in special regions is a promising strategy.
+		</p>
+		<table class="imgtable" align="center"><tr><td>
+		<img src="figure/figure4.png" alt="" width="450px" />&nbsp;</td>
+		<td></td>
+		<td>
+		<img src="figure/figure5_6.png" alt="" width="450px" />&nbsp;</td>
+		<td></td></tr></table>
+</div>
+
+</div>
+
+<!-- Matlab codes -->
+<div>
+<h3><a name="research">Matlab codes</a></h3>
+<p>
+<table>
+	<tr>
+	<td>&nbsp;</td>	
+    <td>&nbsp;</td>
+	<td>&nbsp;</td>	
+    <td>&nbsp;</td>
+	<td>
+	<a href="disN_demo_for_windows.zip" target="_blank" style="target-new: tab;"><b>DisN Demo for Windows</b></a> Version 1.0
+	</td>
+	</tr>
+	<tr>
+	<td>&nbsp;</td>	
+    <td>&nbsp;</td>
+	<td>&nbsp;</td>	
+    <td>&nbsp;</td>
+	<td>
+	<a href="disN_demo_for_unix.zip" target="_blank" style="target-new: tab;"><b>DisN Demo for Linux and Unix</b></a> Version 1.0
+	</td>
+	</tr>
+	</table>
+	</p>
+	<h4>Configurations of demo</h4>
+	<ul>	
+	<li>Uses <a href="http://web.maths.unsw.edu.au/~rsw/Sphere/EffSphDes/" target="_blank" style="target-new: tab;">symmetric spherical designs</a> for both needlet quadrature and discretisation quadrature rules
+	</li><br/>
+	<li>Uses \(C^{5}\)&ndash;piecewise polynomial filter for needlets
+	</li><br/>
+	<li>Uses block algorithm for implementation
+	</li>
+	</ul>
+</div>
+
+<!-- References  -->
+
+<div>
+
+<h3><a name="publ">References</a></h3>
+<ul>  
+ <!-- discrete needlets on sphere  -->
+  <li>Y. G. Wang, Quoc T. Le Gia, I. H. Sloan, R. S. Womersley. Fully discrete needlet approximation on the sphere. 
+  <em>Submitted</em>, 2015. <a href="http://arxiv.org/abs/1502.05806" target="_blank" style="target-new: tab;" >arXiv</a> 
+  <a href="../../discrete_needlets_2015_09_09.pdf" target="_blank" style="target-new: tab;">PDF</a>
+  </li><br/>
+  
+ <!-- Symmetric spherical designs  -->
+  <li>R. S. Womersley. <a href="http://web.maths.unsw.edu.au/~rsw/Sphere/EffSphDes/" target="_blank" style="target-new: tab;">Efficient spherical designs with good geometric properties</a>. 
+  <em>Preprint</em>, 2015.
+  </li>
+ 
+</ul> 
+ </div>
+
+
+</div>
+
+<div id="fuss">
+<table align="center" style="font-size:12px">
+<tr>
+<td width="100" align="center">
+<a href="javascript:history.go(-1)" onMouseOver="self.status=document.referrer;return true">&laquo; Back</a>
+</td>
+</tr>
+</table>
+</div>
+
+</body>
+</html>
+
+
