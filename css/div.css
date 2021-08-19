@@ -90,7 +90,7 @@ div#menu-top{
   background-color: #FAFAFA;
   opacity: 0.6;
   /* width: 720px; */
-  width: 530px;
+  width: 800px;
   margin-top: 0px;
   margin-right: auto; /* Abstand rechts */
   margin-bottom: 0px;
@@ -100,7 +100,7 @@ div#menu-top{
   padding-bottom: 5px;
   padding-top: 5px;
   font-family:Georgia;
-  right: 40px;
+  left: 20px;
   top: 0;
 }
 
